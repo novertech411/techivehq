@@ -18,8 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${cabin.className} `}>
-        {children}
+      <body className="bg-white">
+        <div className={`${inter.className} ${cabin.className} `}>
+          {children}
+        </div>
       </body>
     </html>
   );
