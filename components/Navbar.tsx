@@ -1,3 +1,4 @@
+"use Client ";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -11,8 +12,6 @@ function Navbar() {
       <Image src={logo} alt="techive" />
 
       <ul className=" ml-auto  century font-[400] text-[13px] gap-11 items-center lg:flex      hidden">
-      
-
         <Link href="/about">
           <li
             className={` py-1  border-b-2  border-primary     hover:border-secondary  ${
@@ -32,7 +31,6 @@ function Navbar() {
             Programs
           </li>
         </Link>
-
 
         <Link href="/">
           <li
