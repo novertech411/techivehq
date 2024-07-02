@@ -11,15 +11,7 @@ function Navbar() {
       <Image src={logo} alt="techive" />
 
       <ul className=" ml-auto  century font-[400] text-[13px] gap-11 items-center lg:flex      hidden">
-        <Link href="/">
-          <li
-            className={` py-1  border-b-2  border-primary     hover:border-secondary  ${
-              pathname === "/" ? "border-secondary" : ""
-            }   `}
-          >
-            Home
-          </li>
-        </Link>
+      
 
         <Link href="/about">
           <li
@@ -31,13 +23,24 @@ function Navbar() {
           </li>
         </Link>
 
-        <Link href="/products ">
+        <Link href="/program ">
           <li
             className={` py-1  border-b-2  border-primary     hover:border-secondary  ${
-              pathname === "/products" ? "border-secondary" : ""
+              pathname === "/program" ? "border-secondary" : ""
             }   `}
           >
-            Products And Services
+            Programs
+          </li>
+        </Link>
+
+
+        <Link href="/">
+          <li
+            className={` py-1  border-b-2  border-primary     hover:border-secondary  ${
+              pathname === "/" ? "border-secondary" : ""
+            }   `}
+          >
+            Home
           </li>
         </Link>
       </ul>
