@@ -1,6 +1,6 @@
 import React from "react";
 
-function message() {
+function Message() {
   return (
     <svg
       width="25"
@@ -17,5 +17,4 @@ function message() {
   );
 }
 
-export default message;
-
+export default Message;

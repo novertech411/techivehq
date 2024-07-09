@@ -12,9 +12,15 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "hero-section": "  url('/images/hero.png')",
       },
 
-      coloros: {
+      fontFamily: {
+        "neue-normal": ["neue-normal", "sans-serif"],
+        "neue-medium": ["neue-medium", "sans-serif"],
+        "clash-semi": ["clash-semi", "ui-sans-serif", "system-ui"],
+      },
+      colors: {
         primary: "#0D5B4B",
         secondary: "#FCB64E",
         lightgreen: "#18B99B",
