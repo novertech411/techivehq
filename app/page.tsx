@@ -34,13 +34,15 @@ export default function Home() {
                 className="absolute buttom-4 left-[32%] z-50 w-[100px]"
               />
               <div className="z-0">
-                {" "}
                 <Image
                   src={circle}
                   alt=""
                   className="absolute bottom-1 right-[32%] z-0 w-[200px]"
                 />
               </div>
+            </div>
+            <div>
+              <p>Join our Community</p>
             </div>
           </div>
         </div>
