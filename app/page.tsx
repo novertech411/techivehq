@@ -5,6 +5,7 @@ import Container from "@/components/Container";
 import circle from "@/public/images/Vector (1).png";
 import chain1 from "@/public/images/glass3_dis 5 1.png";
 import chain2 from "@/public/images/0021 1 1.png";
+import Message from "@/components/icons/Message";
 
 export default function Home() {
   return (
@@ -41,8 +42,8 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div>
-              <p>Join our Community</p>
+            <div className=" bg-[#FCB64E] p-4  rounded-full w-[300px]  text-[24px] text-center mx-auto flex ">
+              <p>Join our Community</p> <Message classes="bg-black" />
             </div>
           </div>
         </div>
