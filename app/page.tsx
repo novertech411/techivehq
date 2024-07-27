@@ -42,10 +42,23 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className=" bg-[#FCB64E] p-4  rounded-full w-[300px]  text-[24px] text-center mx-auto flex ">
-              <p>Join our Community</p> <Message classes="bg-black" />
+            <div className=" bg-[#FCB64E] p-4  rounded-full w-[300px]  text-[24px] text-center mx-auto flex items-center gap-2 justify-center ">
+              <p>Join our Community</p> <Message classes="bg-black " />
             </div>
+            <p className="text-center text-[#ffffffa8] text-[12px] mt-4 font-clash-semi">
+              {" "}
+              Currently Serving Plateau, Nigeria.
+            </p>
           </div>
+        </div>
+
+        <div className="text-center text-[60px] font-[600] mt-[70px]">
+          <h2 className=" text-primary ">Who We Are </h2>
+          <p className="max-w-[1000px] mx-auto text-[36px]">
+            Techive Africa is a community driven non-profit organization with
+            the goal to bridge the gap in Tech-talent representation across
+            under-represented regions in Africa.
+          </p>
         </div>
       </Container>
     </div>
