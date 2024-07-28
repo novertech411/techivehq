@@ -6,6 +6,9 @@ import circle from "@/public/images/Vector (1).png";
 import chain1 from "@/public/images/glass3_dis 5 1.png";
 import chain2 from "@/public/images/0021 1 1.png";
 import Message from "@/components/icons/Message";
+import advoct from "@/public/images/Group 1000001943.png";
+import community from "@/public/images/Group 1000001944.png";
+import learning from "@/public/images/Group 1000001945.png";
 
 export default function Home() {
   return (
@@ -54,11 +57,58 @@ export default function Home() {
 
         <div className="text-center text-[60px] font-[600] mt-[70px]">
           <h2 className=" text-primary ">Who We Are </h2>
-          <p className="max-w-[1000px] mx-auto text-[36px]">
+          <p className="max-w-[1000px] mx-auto text-[28px] font-[400]">
             Techive Africa is a community driven non-profit organization with
             the goal to bridge the gap in Tech-talent representation across
             under-represented regions in Africa.
           </p>
+        </div>
+
+        <div className="text-center text-[60px] font-[600] mt-[80px] flex gap-10 justify-center ">
+          <div className="text-left  w-[600px] ">
+            {" "}
+            <h2 className=" text-primary ">
+              Advocacy for inclusivity & Adoption{" "}
+            </h2>
+            <p className="max-w-[1000px] mx-auto text-[28px] font-[400]">
+              Our organization aims to promote the transformative power of
+              technology, empowering young individuals to explore diverse
+              opportunities and make informed choices aligned with their
+              aspirations.
+            </p>{" "}
+          </div>
+
+          <Image src={advoct} alt="" />
+        </div>
+
+        <div className="text-center text-[60px] font-[600] mt-[80px] flex gap-10 justify-center ">
+          <Image src={community} alt="community" />
+
+          <div className="text-left  w-[600px] ">
+            {" "}
+            <h2 className=" text-primary ">Community you can grow with </h2>
+            <p className="max-w-[1000px] mx-auto text-[28px] font-[400]">
+              At Techive Africa, we foster a supportive community where
+              individuals can learn, collaborate, and achieve their career
+              aspirations at scale.
+            </p>{" "}
+          </div>
+        </div>
+
+        <div className="text-center text-[60px] font-[600] mt-[80px] flex gap-10 justify-center ">
+          <div className="text-left  w-[600px] ">
+            {" "}
+            <h2 className=" text-primary ">
+              Learning/Mentorship Opportunities{" "}
+            </h2>
+            <p className="max-w-[1000px] mx-auto text-[28px] font-[400]">
+              We host trainings, seminars, and bootcamps to educate and equip
+              individuals within the community with the essential skills needed
+              to enter the tech industry.
+            </p>{" "}
+          </div>
+
+          <Image src={learning} alt="" />
         </div>
       </Container>
     </div>
