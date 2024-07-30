@@ -9,7 +9,7 @@ import logo from "@/public/images/Layer_1.png";
 
 function Footer() {
   return (
-    <div className="bg-primary p">
+    <div className="bg-primary ">
       <Container>
         <div className="flex justify-center gap-[60px] pt-[200px] items-center ">
           <Image src={happy} alt="happy" />

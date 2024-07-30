@@ -9,13 +9,13 @@ import Message from "./icons/Message";
 function Navbar() {
   const pathname = usePathname();
   return (
-    <div className=" ">
+    <div className="  bg-white">
       <Container>
-        <div className=" flex justify-between py-11  items-center">
+        <div className=" flex justify-between py-5  items-center ">
           <Image src={logo} alt="techive" className=" w-[130px]" />
 
           <ul className="  century font-[400] text-[16px] gap-[70px] items-center lg:flex  font-neue-normal    hidden">
-            <Link href="/about">
+            <Link href="#about">
               <li
                 className={` py-1  border-b-2  border-white     hover:border-secondary  ${
                   pathname === "/about" ? "border-secondary" : ""
@@ -25,7 +25,7 @@ function Navbar() {
               </li>
             </Link>
 
-            <Link href="/program ">
+            <Link href="#program ">
               <li
                 className={` py-1  border-b-2  border-white    hover:border-secondary  ${
                   pathname === "/program" ? "border-secondary" : ""
