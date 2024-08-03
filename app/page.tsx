@@ -13,17 +13,17 @@ import learning from "@/public/images/Group 1000001945.png";
 export default function Home() {
   return (
     <div className=" mt-11">
-      <div className="">
+      <div className="   md:bg-none bg-[#202624]">
         <Container>
           <div
-            className="bg-hero-section bg-no-repeat h-[718px]  bg-yellow-300 rounded-xl
+            className="bg-hero-section bg-no-repeat h-[718px]  bg-yellow-300 md:rounded-xl 
    "
           >
             <div>
               {" "}
               <div className="text-center relative pt-[60px] ">
                 {" "}
-                <h2 className="font-clash-semi font-[700] text-white text-[58px]  realtive  z-50 ">
+                <h2 className="font-clash-semi font-[700] text-white md:text-[58px] text-[30px] realtive  z-50 ">
                   Empowering <br />
                   African Youths <br />
                   Through Tech.
@@ -62,23 +62,20 @@ export default function Home() {
           <h2 id="about" className=" text-primary ">
             Who We Are{" "}
           </h2>
-          <p className="max-w-[1000px] mx-auto text-[28px] font-[400]">
+          <p className="max-w-[1000px] mx-auto md:text-[28px]  text-[15px] font-[400]">
             Techive Africa is a community driven non-profit organization with
             the goal to bridge the gap in Tech-talent representation across
             under-represented regions in Africa.
           </p>
         </div>
 
-        <div
-          id="program"
-          className="text-center text-[60px] font-[600] mt-[250px] flex gap-10 justify-center  "
-        >
-          <div className="text-left  w-[600px] ">
+        <div className="text-center md:text-[60px]  text-[30px] font-[600] mt-[250px] flex gap-10 justify-center md:flex-row  flex-col  px-4 ">
+          <div className="text-left  max-w-[600px]  ">
             {" "}
-            <h2 className=" text-primary ">
+            <h2 className=" text-primary  text-center">
               Advocacy for inclusivity & Adoption{" "}
             </h2>
-            <p className="max-w-[1000px] mx-auto text-[28px] font-[400]">
+            <p className="md:max-w-[1000px]  mx-auto  md:text-[28px]  text-[15px] font-[400] text-center ">
               Our organization aims to promote the transformative power of
               technology, empowering young individuals to explore diverse
               opportunities and make informed choices aligned with their
@@ -89,13 +86,13 @@ export default function Home() {
           <Image src={advoct} alt="" />
         </div>
 
-        <div className="text-center text-[60px] font-[600] mt-[180px] flex gap-10 justify-center ">
+        <div className="text-center  md:text-[60px]  text-[30px] font-[600] mt-[180px] flex gap-10 justify-center  md:flex-row  flex-col-reverse  px-4 ">
           <Image src={community} alt="community" />
 
-          <div className="text-left  w-[600px] ">
+          <div className="md:text-left  max-w-[600px] text-center ">
             {" "}
             <h2 className=" text-primary ">Community you can grow with </h2>
-            <p className="max-w-[1000px] mx-auto text-[28px] font-[400]">
+            <p className="max-w-[1000px] mx-auto  md:text-[28px]  text-[15px] font-[400]">
               At Techive Africa, we foster a supportive community where
               individuals can learn, collaborate, and achieve their career
               aspirations at scale.
@@ -103,13 +100,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="text-center text-[60px] font-[600] mt-[180px]  mb-[100px] flex gap-10 justify-center ">
-          <div className="text-left  w-[600px] ">
+        <div className="text-center md:text-[60px]  text-[30px] font-[600] mt-[180px]  mb-[100px] flex gap-10 justify-center  md:flex-row  flex-col  px-4 ">
+          <div className="md:text-left text-center  max-w-[600px] ">
             {" "}
             <h2 className=" text-primary ">
               Learning/Mentorship Opportunities{" "}
             </h2>
-            <p className="max-w-[1000px] mx-auto text-[28px] font-[400]">
+            <p className="max-w-[1000px] mx-auto md:text-[28px]  text-[15px] font-[400]">
               We host trainings, seminars, and bootcamps to educate and equip
               individuals within the community with the essential skills needed
               to enter the tech industry.

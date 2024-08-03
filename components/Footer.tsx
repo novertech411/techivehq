@@ -11,18 +11,18 @@ function Footer() {
   return (
     <div className="bg-primary ">
       <Container>
-        <div className="flex justify-center gap-[60px] pt-[200px] items-center ">
+        <div className="flex justify-center gap-[60px] md:pt-[200px]   pt-[100px] items-center  flex-col-reverse">
           <Image src={happy} alt="happy" />
 
-          <div className="text-center">
-            <h2 className=" text-white text-[64px] font-[600] ">
+          <div className="text-center px-2">
+            <h2 className=" text-white md:text-[64px] text-[40px] font-[600] ">
               Join our Community{" "}
             </h2>
-            <p className="max-w-[1000px] mx-auto text-[28px] font-[400] text-white w-[90%]  ">
+            <p className="max-w-[1000px] mx-auto md:text-[28px] text-[18px] font-[400] text-white w-[90%]   ">
               Learn more about us and stay up to date with our activities. Join
               our community today!
             </p>{" "}
-            <div className="flex gap-1 text-[18px] mt-11">
+            <div className="flex gap-1 text-[18px] mt-11 flex-wrap justify-center">
               <input
                 placeholder=" FirstName  "
                 className=" p-[14px] bg-white"

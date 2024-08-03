@@ -12,7 +12,7 @@ function Navbar() {
     <div className="  bg-white">
       <Container>
         <div className=" flex justify-between py-5  items-center ">
-          <Image src={logo} alt="techive" className=" w-[130px]" />
+          <Image src={logo} alt="techive" className=" md:w-[130px] w-[90px]" />
 
           <ul className="  century font-[400] text-[16px] gap-[70px] items-center lg:flex  font-neue-normal    hidden">
             <Link href="#about">
@@ -46,7 +46,7 @@ function Navbar() {
             </Link>
           </ul>
 
-          <div className=" text-white  bg-primary rounded-full py-4 px-9 flex gap-3 items-center font-neue-medium">
+          <div className=" text-white  bg-primary rounded-full py-4 px-9 md:flex gap-3 items-center font-neue-medium hidden">
             {" "}
             <h2>Join our Community</h2> <Message classes=" bg-white" />
           </div>
