@@ -39,7 +39,7 @@ function Footer() {
 
       <Container>
         <div className="flex md:justify-between md:px-11  px-3 md:pt-[150px] pt-9   pb-11 flex-col md:flex-row justify-center">
-          <Image src={logo} alt="" className="md:w-full  mx-auto my-9" />{" "}
+          <Image src={logo} alt="" className=" md:mx-0 mx-auto my-9" />{" "}
           <div className="text-white md:text-[20px]  text-center ">
             <p>We are social</p>
             <div className="flex gap-3 justify-center  text-[30px]   ">
