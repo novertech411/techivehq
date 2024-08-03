@@ -67,7 +67,7 @@ export default function Home() {
         </Container>
       </div>
       <Container>
-        <div className="text-center text-[60px] font-[600] mt-[138px]">
+        <div className="text-center md:text-[60px] text-[45px] font-[600] mt-[138px]">
           <h2 id="about" className=" text-primary ">
             Who We Are{" "}
           </h2>
@@ -78,13 +78,13 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="text-center md:text-[60px]  text-[30px] font-[600] mt-[250px] flex gap-10 justify-center md:flex-row  flex-col  px-4 ">
+        <div className="text-center md:text-[60px]  text-[45px] font-[600] md:mt-[250px] mt-[90px] flex gap-10 justify-center md:flex-row  flex-col  px-4 ">
           <div className="text-left  max-w-[600px]  ">
             {" "}
             <h2 className=" text-primary  text-center">
               Advocacy for inclusivity & Adoption{" "}
             </h2>
-            <p className="md:max-w-[1000px]  mx-auto  md:text-[28px]  text-[15px] font-[400] text-center ">
+            <p className="md:max-w-[1000px]  mx-auto  md:text-[28px]  text-[20px] font-[400] text-center ">
               Our organization aims to promote the transformative power of
               technology, empowering young individuals to explore diverse
               opportunities and make informed choices aligned with their

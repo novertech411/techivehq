@@ -22,7 +22,7 @@ function Footer() {
               Learn more about us and stay up to date with our activities. Join
               our community today!
             </p>{" "}
-            <div className="flex gap-1 text-[18px] mt-11 flex-wrap justify-center">
+            <div className="flex gap-1 text-[18px] mt-11 flex-wrap px-4  justify-center">
               <input
                 placeholder=" FirstName  "
                 className=" p-[14px] bg-white"
