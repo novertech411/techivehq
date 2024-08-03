@@ -9,6 +9,8 @@ import Message from "@/components/icons/Message";
 import advoct from "@/public/images/Group 1000001943.png";
 import community from "@/public/images/Group 1000001944.png";
 import learning from "@/public/images/Group 1000001945.png";
+import leftIMG from "@/public/images/Layer 0 1.png";
+import rightIMG from "@/public/images/mod 2 1.png";
 
 export default function Home() {
   return (
@@ -16,7 +18,7 @@ export default function Home() {
       <div className="   md:bg-none bg-[#202624]">
         <Container>
           <div
-            className="bg-hero-section bg-no-repeat h-[718px]  bg-yellow-300 md:rounded-xl 
+            className=" bg-hero-section relative bg-no-repeat h-[718px]  md:rounded-xl 
    "
           >
             <div>
@@ -54,6 +56,13 @@ export default function Home() {
                 Currently Serving Plateau, Nigeria.
               </p>
             </div>
+
+            {/* <Image src={leftIMG} alt="" className="absolute left-0 bottom-0" />
+            <Image
+              src={rightIMG}
+              alt=""
+              className="absolute right-0 bottom-0"
+            /> */}
           </div>
         </Container>
       </div>
@@ -113,7 +122,7 @@ export default function Home() {
             </p>{" "}
           </div>
 
-          <Image src={learning} alt="" />
+          <Image src={learning} alt="" className=" " />
         </div>
       </Container>
     </div>

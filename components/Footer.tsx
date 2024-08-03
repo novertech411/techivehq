@@ -38,11 +38,11 @@ function Footer() {
       </Container>
 
       <Container>
-        <div className="flex justify-between px-11 pt-[150px]  pb-11">
-          <Image src={logo} alt="" />{" "}
-          <div className="text-white text-[20px] ">
+        <div className="flex md:justify-between md:px-11  px-3 md:pt-[150px] pt-9   pb-11 flex-col md:flex-row justify-center">
+          <Image src={logo} alt="" className="md:w-full  mx-auto my-9" />{" "}
+          <div className="text-white md:text-[20px]  text-center ">
             <p>We are social</p>
-            <div className="flex gap-3 justify-center  text-[30px]">
+            <div className="flex gap-3 justify-center  text-[30px]   ">
               <FiInstagram className="" />
               <FaLinkedin />
               <BsTwitterX />
