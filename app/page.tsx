@@ -11,6 +11,7 @@ import community from "@/public/images/Group 1000001944.png";
 import learning from "@/public/images/Group 1000001945.png";
 import leftIMG from "@/public/images/Layer 0 1.png";
 import rightIMG from "@/public/images/mod 2 1.png";
+import Modal from "@/components/Modal";
 
 export default function Home() {
   return (
@@ -125,6 +126,8 @@ export default function Home() {
           <Image src={learning} alt="" className=" " />
         </div>
       </Container>
+
+      <Modal />
     </div>
   );
 }

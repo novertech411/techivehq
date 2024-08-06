@@ -39,7 +39,7 @@ function Footer() {
   return (
     <div className="bg-primary ">
       <Container>
-        <div className="flex justify-center gap-[60px] md:pt-[200px]   pt-[100px] items-center  flex-col-reverse">
+        <div className="flex justify-center  md:pt-[200px]   pt-[100px] items-center  md:flex-row flex-col-reverse">
           <Image src={happy} alt="happy" />
 
           <div className="text-center px-2">
@@ -57,7 +57,7 @@ function Footer() {
               />
               <input placeholder=" Email " className=" p-[14px] bg-white" />
               <button
-                className="p-[14px] bg-[#18B99B] text-[30px] w-[170px] text-white"
+                className="p-[7px] bg-[#18B99B] text-[30px] w-[100px] text-white"
                 onClick={handleJoinClick}
               >
                 Join
