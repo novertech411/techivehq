@@ -22,7 +22,7 @@ export default function RootLayout({
         <div className={`${inter.className} ${cabin.className} `}>
           {children}
         </div>
-        <Modal />
+
         <Footer />
       </body>
     </html>

@@ -12,8 +12,15 @@ import learning from "@/public/images/Group 1000001945.png";
 import leftIMG from "@/public/images/Layer 0 1.png";
 import rightIMG from "@/public/images/mod 2 1.png";
 import Modal from "@/components/Modal";
+import { useState } from "react";
+
+interface Home {
+  isVisible: boolean;
+}
 
 export default function Home() {
+  const [showModel, setshowModel] = useState(false);
+
   return (
     <div className=" mt-11">
       <div className="   md:bg-none bg-[#202624]">
@@ -34,12 +41,12 @@ export default function Home() {
                 <Image
                   src={chain1}
                   alt=""
-                  className="absolute top-1 right-[32%] z-50 w-[100px]"
+                  className="absolute top-1 right-[32%] z-10 w-[100px]"
                 />
                 <Image
                   src={chain2}
                   alt=""
-                  className="absolute buttom-4 left-[32%] z-50 w-[100px]"
+                  className="absolute buttom-4 left-[32%] z-10 w-[100px]"
                 />
                 <div className="z-0">
                   <Image
@@ -49,7 +56,10 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className=" bg-[#FCB64E] p-4  rounded-full w-[300px]  text-[24px] text-center mx-auto flex items-center gap-2 justify-center ">
+              <div
+                className=" bg-[#FCB64E] p-4  rounded-full w-[300px]  text-[24px] text-center mx-auto flex items-center gap-2 justify-center "
+                onClick={() => setshowModel(true)}
+              >
                 <p>Join our Community</p> <Message classes="bg-black " />
               </div>
               <p className="text-center text-[#ffffffa8] text-[12px] mt-4 font-clash-semi">
@@ -126,8 +136,7 @@ export default function Home() {
           <Image src={learning} alt="" className=" " />
         </div>
       </Container>
-
-      <Modal />
+      <Modal isVisible={showModel} onClose={() => setshowModel(false)} />
     </div>
   );
 }
