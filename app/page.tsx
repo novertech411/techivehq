@@ -71,14 +71,14 @@ export default function Home() {
           <h2 id="about" className=" text-primary ">
             Who We Are{" "}
           </h2>
-          <p className="max-w-[1000px] mx-auto md:text-[28px]  text-[20px] font-[400]">
+          <p className="max-w-[1000px] mx-auto md:text-[28px]  text-[20px] font-[400] px-3">
             Techive Africa is a community driven non-profit organization with
             the goal to bridge the gap in Tech-talent representation across
             under-represented regions in Africa.
           </p>
         </div>
 
-        <div className="text-center md:text-[60px]  text-[45px] font-[600] md:mt-[250px] mt-[90px] flex gap-10 justify-center md:flex-row  flex-col  px-1 ">
+        <div className="text-center md:text-[60px]  text-[45px] font-[600] md:mt-[250px] mt-[90px] flex gap-10 justify-center md:flex-row  flex-col  px-3 ">
           <div className="text-left  max-w-[600px]  ">
             {" "}
             <h2 className=" text-primary  text-center">
@@ -95,7 +95,7 @@ export default function Home() {
           <Image src={advoct} alt="" />
         </div>
 
-        <div className="text-center  md:text-[60px]  text-[45px] font-[600] mt-[180px] flex gap-10 justify-center  md:flex-row  flex-col-reverse p-1   ">
+        <div className="text-center  md:text-[60px]  text-[45px] font-[600] md:mt-[180px] mt-[90px] flex gap-10 justify-center  md:flex-row  flex-col-reverse p-3   ">
           <Image src={community} alt="community" />
 
           <div className="md:text-left  max-w-[600px] text-center ">
@@ -109,7 +109,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="text-center md:text-[60px]  text-[45px] font-[600] mt-[180px]  mb-[100px] flex gap-10 justify-center  md:flex-row  flex-col  p-1 ">
+        <div className="text-center md:text-[60px]  text-[45px] font-[600] md:mt-[180px]  mt-[90px] mb-[100px] flex gap-10 justify-center  md:flex-row  flex-col  p-3 ">
           <div className="md:text-left text-center  max-w-[600px] ">
             {" "}
             <h2 className=" text-primary ">

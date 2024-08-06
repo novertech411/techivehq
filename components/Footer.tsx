@@ -1,13 +1,41 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
+
 import happy from "@/public/images/Group 1000001946.png";
 import Container from "./Container";
 import { FiInstagram } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import logo from "@/public/images/Layer_1.png";
+import JSConfetti from "js-confetti";
 
 function Footer() {
+  const [jsConfetti, setJsConfetti] = useState<JSConfetti | null>(null);
+
+  useEffect(() => {
+    // Initialize JSConfetti only on the client-side
+    if (typeof window !== "undefined") {
+      setJsConfetti(new JSConfetti());
+    }
+  }, []);
+
+  const handleJoinClick = () => {
+    if (jsConfetti && jsConfetti.addConfetti) {
+      jsConfetti.addConfetti({
+        confettiColors: [
+          "#ff0a54",
+          "#ff477e",
+          "#ff7096",
+          "#ff85a1",
+          "#fbb1bd",
+          "#f9bec7",
+        ],
+        confettiNumber: 100,
+        emojis: ["🥳", "🎊 ", "🔥", "✨"],
+      });
+    }
+  };
+
   return (
     <div className="bg-primary ">
       <Container>
@@ -28,8 +56,10 @@ function Footer() {
                 className=" p-[14px] bg-white"
               />
               <input placeholder=" Email " className=" p-[14px] bg-white" />
-              <button className="p-[14px] bg-[#18B99B] text-[30px] w-[170px] text-white ">
-                {" "}
+              <button
+                className="p-[14px] bg-[#18B99B] text-[30px] w-[170px] text-white"
+                onClick={handleJoinClick}
+              >
                 Join
               </button>
             </div>
