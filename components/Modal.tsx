@@ -6,25 +6,17 @@ import logo from "@/public/images/Layer_1.png";
 import JSConfetti from "js-confetti";
 import { FaWhatsapp } from "react-icons/fa";
 
-// Define the type for the props
 interface ModalProps {
   isVisible: boolean;
   onClose: () => void;
 }
 
-// const Modal: React.FC<ModalProps> = ({ isVisible  onClose }) => {
-//   if (!isVisible) return null;
 const Modal: React.FC<ModalProps> = ({ isVisible, onClose }) => {
-  if (!isVisible) return null;
-
+  // All hooks are called unconditionally at the top of the component
   const [jsConfetti, setJsConfetti] = useState<JSConfetti | null>(null);
   const [isJoined, setIsJoined] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [countryCode, setCountryCode] = useState("+234");
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -37,7 +29,7 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose }) => {
     setTimeout(() => {
       setIsLoading(false);
       setIsJoined(true);
-      if (jsConfetti && jsConfetti.addConfetti) {
+      if (jsConfetti) {
         jsConfetti.addConfetti({
           confettiColors: [
             "#ff0a54",
@@ -54,17 +46,20 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose }) => {
     }, 2000);
   };
 
+  // Conditional rendering after all hooks
+  if (!isVisible) return null;
+
   return (
-    <div className="fixed inset-0 z-50 bg-[#0b0b0b35] backdrop-blur-sm flex justify-center items-center modal-overlay">
-      <div className="bg-primary rounded-md z-50 md:w-[57%]">
+    <div
+      className="fixed inset-0 z-50 bg-[#0b0b0b35] backdrop-blur-sm flex justify-center items-center modal-overlay"
+      onClick={onClose} // Close the modal if the overlay is clicked
+    >
+      <div
+        className="bg-primary rounded-md z-50 md:w-[57%]"
+        onClick={(e) => e.stopPropagation()} // Prevent modal from closing if the modal itself is clicked
+      >
         <Container>
-          <div className="flex justify-center md:py-[100px] py-[20px] items-center flex-col relative">
-            <button
-              onClick={() => onClose()}
-              className=" absolute top-[50px] md:right-[70px] right-[30px] text-white md:text-[34px] text-[24px]  md:w-[60px]  w-[30px] h-[30px] md:h-[60px] rounded-full hover:bg-secondary"
-            >
-              x
-            </button>
+          <div className="flex justify-center md:py-[100px] py-[20px] items-center flex-col">
             <Image src={logo} alt="" className="mx-auto md:my-9" />
 
             <div className="text-center px-2">
@@ -97,18 +92,18 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose }) => {
                 }`}
               >
                 <input
-                  placeholder=" First Name  "
+                  placeholder="FirstName"
                   className="p-[14px] bg-white rounded-md focus:outline-none"
                 />
                 <input
-                  placeholder=" Email "
-                  className="p-[14px] bg-white  rounded-md focus:outline-none"
+                  placeholder="Email"
+                  className="p-[14px] bg-white rounded-md focus:outline-none"
                 />
 
                 <p className="text-[24px] gap-2 flex items-center text-white">
                   <FaWhatsapp className="text-secondary" /> WhatsApp Number
                 </p>
-                <div className="flex ">
+                <div className="flex">
                   <input
                     placeholder="+234 Number"
                     className="p-[14px] bg-white rounded-md flex-grow focus:outline-none"
