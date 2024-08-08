@@ -84,7 +84,7 @@ function Navbar() {
           </li>
         </Link>
 
-        <Link href="/" onClick={handleToggle}>
+        <Link href="/contact" onClick={handleToggle}>
           <li
             className={` py-1  border-b-2  border-white    hover:border-secondary  ${
               pathname === "/" ? "border-secondary" : ""

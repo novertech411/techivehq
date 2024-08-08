@@ -53,7 +53,7 @@ export default function Home() {
                 />
                 <motion.div
                   className="z-0 absolute md:bottom-[2%] top-[70%]  md:right-[32%]  right-[13%] "
-                  initial={{ x: "-80vw" }}
+                  initial={{ x: "-100vw" }}
                   animate={{ x: 0 }}
                   transition={{ type: "spring", stiffness: 120 }}
                 >
@@ -96,7 +96,7 @@ export default function Home() {
         </div>
 
         <div className="text-center md:text-[60px]   text-[39px] font-[600] md:mt-[250px] mt-[90px] flex gap-10 justify-center md:flex-row  flex-col  px-3 ">
-          <div className="text-left  max-w-[600px]  ">
+          <div id="program" className="text-left  max-w-[600px]  ">
             {" "}
             <h2 className=" text-primary  text-center">
               Advocacy for inclusivity & Adoption{" "}
