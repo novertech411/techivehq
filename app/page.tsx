@@ -1,4 +1,5 @@
 "use client";
+import "@/app/globals.css";
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
@@ -83,7 +84,7 @@ export default function Home() {
         </Container>
       </div>
       <Container>
-        <div className="text-center md:text-[60px] text-[45px] font-[600] mt-[138px]">
+        <div className="text-center md:text-[60px]  text-[39px] font-[600] mt-[138px]">
           <h2 id="about" className=" text-primary ">
             Who We Are{" "}
           </h2>
@@ -94,7 +95,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="text-center md:text-[60px]  text-[45px] font-[600] md:mt-[250px] mt-[90px] flex gap-10 justify-center md:flex-row  flex-col  px-3 ">
+        <div className="text-center md:text-[60px]   text-[39px] font-[600] md:mt-[250px] mt-[90px] flex gap-10 justify-center md:flex-row  flex-col  px-3 ">
           <div className="text-left  max-w-[600px]  ">
             {" "}
             <h2 className=" text-primary  text-center">
@@ -111,7 +112,7 @@ export default function Home() {
           <Image src={advoct} alt="" />
         </div>
 
-        <div className="text-center  md:text-[60px]  text-[45px] font-[600] md:mt-[180px] mt-[90px] flex gap-10 justify-center  md:flex-row  flex-col-reverse p-3   ">
+        <div className="text-center  md:text-[60px]   text-[39px] font-[600] md:mt-[180px] mt-[90px] flex gap-10 justify-center  md:flex-row  flex-col-reverse p-3   ">
           <Image src={community} alt="community" />
 
           <div className="md:text-left  max-w-[600px] text-center ">
@@ -125,7 +126,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="text-center md:text-[60px]  text-[45px] font-[600] md:mt-[180px]  mt-[90px] mb-[100px] flex gap-10 justify-center  md:flex-row  flex-col  p-3 ">
+        <div className="text-center md:text-[60px]  text-[39px] font-[600] md:mt-[180px]  mt-[90px] mb-[100px] flex gap-10 justify-center  md:flex-row  flex-col  p-3 ">
           <div className="md:text-left text-center  max-w-[600px] ">
             {" "}
             <h2 className=" text-primary ">
