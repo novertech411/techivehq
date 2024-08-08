@@ -24,7 +24,7 @@ export default function Home() {
   const [showModel, setshowModel] = useState(false);
 
   return (
-    <div className=" mt-11">
+    <div className=" mt-[100px]">
       <div className="   ">
         <Container>
           <div
@@ -35,7 +35,7 @@ export default function Home() {
               {" "}
               <div className="text-center relative pt-[60px] ">
                 {" "}
-                <h2 className="font-clash-semi font-[700] text-white md:text-[58px] text-[30px] realtive  z-50 ">
+                <h2 className="font-clash-semi font-[700] text-white md:text-[58px] text-[40px] realtive  z-50 ">
                   Empowering <br />
                   African Youths <br />
                   Through Tech.
@@ -43,23 +43,24 @@ export default function Home() {
                 <Image
                   src={chain1}
                   alt=""
-                  className="absolute top-5 right-[30%] z-10 w-[100px] float-animation-horizontal"
+                  className="absolute top-5 md:right-[30%]  right-[10%] z-10 md:w-[100px]   w-[80px]  float-animation-horizontal"
                 />
                 <Image
                   src={chain2}
                   alt=""
-                  className="absolute  bottom-[10px] left-[28%] z-10 w-[100px] float-animation-horizontal-delayed"
+                  className="absolute  bottom-[10px] md:left-[28%]  left-[10%]z-10 md:w-[100px]   w-[80px] float-animation-horizontal-delayed"
                 />
                 <div className="z-0">
                   {" "}
-                  <Circle classes=" absolute bottom-1 right-[32%] w-[200px]" />{" "}
+                  <Circle classes=" absolute md:bottom-[2%] top-[70%]  md:right-[32%]  right-[13%]  md:w-[200px]   w-[130px] text-secondary " />{" "}
                 </div>
               </div>
               <div
-                className="  bg-[#FCB64E] p-4  border-4 border-secondary hover:text-white hover:bg-[#202624]  rounded-full w-[300px]  my-11 text-[24px] text-center mx-auto flex items-center gap-2 justify-center  hover"
+                className="  bg-[#FCB64E] md:p-4  p-2 border-4 border-secondary hover:text-white hover:bg-[#202624]  rounded-full md:w-[300px]  w-[240px] my-11 md:text-[24px] text-[20px] text-center mx-auto flex items-center gap-2 justify-center  hover"
                 onClick={() => setshowModel(true)}
               >
-                <p>Join our Community</p> <Message className=" bounce   " />
+                <p>Join our Community</p>{" "}
+                <Message className=" bounce  md:w-[30px] w-[20px]  " />
               </div>
               <p className="text-center text-[#ffffffa8] text-[12px] mt-4 font-clash-semi">
                 {" "}

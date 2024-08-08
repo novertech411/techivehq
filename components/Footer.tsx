@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-
-import happy from "@/public/images/Group 1000001946.png";
+import { FaWhatsapp } from "react-icons/fa";
+import happy from "@/public/images/1 SCENE 2.png";
 import Container from "./Container";
 import { FiInstagram } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
@@ -50,14 +50,30 @@ function Footer() {
               Learn more about us and stay up to date with our activities. Join
               our community today!
             </p>{" "}
-            <div className="flex gap-1 text-[18px] mt-11 flex-wrap px-4  justify-center">
+            <div className="flex gap-1 text-[18px] mt-11 flex-wrap px-4  flex-col max-w-[500px] mx-auto justify-center">
               <input
                 placeholder=" FirstName  "
-                className=" p-[14px] bg-white"
+                className=" p-[14px] bg-white focus:outline-none rounded-md"
               />
-              <input placeholder=" Email " className=" p-[14px] bg-white" />
+              <input
+                placeholder=" Email "
+                className=" p-[14px] bg-white focus:outline-none rounded-md"
+              />
+
+              <div className="my-3">
+                <p className="text-[24px] gap-2 flex items-center text-white ">
+                  <FaWhatsapp className="text-secondary" /> WhatsApp Number
+                </p>
+                <div className="flex">
+                  <input
+                    placeholder="+234 Number"
+                    className="p-[14px] bg-white rounded-md flex-grow focus:outline-none"
+                    type="tel"
+                  />
+                </div>
+              </div>
               <button
-                className="p-[7px] bg-[#18B99B] text-[30px] w-[100px] text-white"
+                className="p-[7px] bg-[#18B99B] text-[30px] w-[100px] mt-3 text-white mx-auto rounded-md"
                 onClick={handleJoinClick}
               >
                 Join
@@ -68,7 +84,7 @@ function Footer() {
       </Container>
 
       <Container>
-        <div className="flex md:justify-between md:px-11  px-3 md:pt-[150px] pt-9   pb-11 flex-col md:flex-row justify-center">
+        <div className="flex md:justify-between md:px-11  px-3 md:pt-[150px] pt-9   pb-11 flex-col md:flex-row justify-center items-center">
           <Image src={logo} alt="" className=" md:mx-0 mx-auto my-9" />{" "}
           <div className="text-white md:text-[20px]  text-center ">
             <p>We are social</p>

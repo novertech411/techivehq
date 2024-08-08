@@ -61,7 +61,7 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose }) => {
         <Container>
           <div className="flex justify-center md:py-[100px] py-[20px] items-center flex-col relative">
             <button
-              className="absolute top-[70px] right-[60px] text-white text-[40px]  h-[30px] w-[30px] flex items-center  justify-center  rounded-full hover:bg-secondary"
+              className="absolute md:top-[70px] top-[40px] md:right-[60px] right-[20px] text-white text-[40px]  h-[30px] w-[30px] flex items-center  justify-center  rounded-full hover:bg-secondary"
               onClick={onClose}
             >
               &times;
