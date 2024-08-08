@@ -50,10 +50,15 @@ export default function Home() {
                   alt=""
                   className="absolute  bottom-[10px] md:left-[28%]  left-[10%]z-10 md:w-[100px]   w-[80px] float-animation-horizontal-delayed"
                 />
-                <div className="z-0">
+                <motion.div
+                  className="z-0 absolute md:bottom-[2%] top-[70%]  md:right-[32%]  right-[13%] "
+                  initial={{ x: "-80vw" }}
+                  animate={{ x: 0 }}
+                  transition={{ type: "spring", stiffness: 120 }}
+                >
                   {" "}
-                  <Circle classes=" absolute md:bottom-[2%] top-[70%]  md:right-[32%]  right-[13%]  md:w-[200px]   w-[130px] text-secondary " />{" "}
-                </div>
+                  <Circle classes="  md:w-[200px]   w-[130px] text-secondary " />{" "}
+                </motion.div>
               </div>
               <div
                 className="  bg-[#FCB64E] md:p-4  p-2 border-4 border-secondary hover:text-white hover:bg-[#202624]  rounded-full md:w-[300px]  w-[240px] my-11 md:text-[24px] text-[20px] text-center mx-auto flex items-center gap-2 justify-center  hover"
