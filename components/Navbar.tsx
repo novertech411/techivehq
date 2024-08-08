@@ -48,7 +48,7 @@ function Navbar() {
 
           <div className=" text-white  bg-primary rounded-full py-4 px-9 md:flex gap-3 items-center font-neue-medium hidden">
             {" "}
-            <h2>Join our Community</h2> <Message classes=" bg-white" />
+            <h2>Join our Community</h2> <Message className=" " />
           </div>
         </div>
       </Container>

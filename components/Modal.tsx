@@ -59,7 +59,14 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose }) => {
         onClick={(e) => e.stopPropagation()} // Prevent modal from closing if the modal itself is clicked
       >
         <Container>
-          <div className="flex justify-center md:py-[100px] py-[20px] items-center flex-col">
+          <div className="flex justify-center md:py-[100px] py-[20px] items-center flex-col relative">
+            <button
+              className="absolute top-[70px] right-[60px] text-white text-[40px]  h-[30px] w-[30px] flex items-center  justify-center  rounded-full hover:bg-secondary"
+              onClick={onClose}
+            >
+              &times;
+            </button>
+
             <Image src={logo} alt="" className="mx-auto md:my-9" />
 
             <div className="text-center px-2">

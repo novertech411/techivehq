@@ -1,8 +1,9 @@
 "use client";
+
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Container from "@/components/Container";
-import circle from "@/public/images/Vector (1).png";
+import Circle from "@/components/icons/Circle";
 import chain1 from "@/public/images/glass3_dis 5 1.png";
 import chain2 from "@/public/images/0021 1 1.png";
 import Message from "@/components/icons/Message";
@@ -12,6 +13,7 @@ import learning from "@/public/images/Group 1000001945.png";
 import leftIMG from "@/public/images/Layer 0 1.png";
 import rightIMG from "@/public/images/mod 2 1.png";
 import Modal from "@/components/Modal";
+import { motion } from "framer-motion";
 import { useState } from "react";
 
 interface Home {
@@ -23,7 +25,7 @@ export default function Home() {
 
   return (
     <div className=" mt-11">
-      <div className="   md:bg-none bg-[#202624]">
+      <div className="   ">
         <Container>
           <div
             className=" bg-hero-section relative bg-no-repeat h-[718px]  md:rounded-xl 
@@ -41,26 +43,23 @@ export default function Home() {
                 <Image
                   src={chain1}
                   alt=""
-                  className="absolute top-1 right-[32%] z-10 w-[100px]"
+                  className="absolute top-5 right-[30%] z-10 w-[100px] float-animation-horizontal"
                 />
                 <Image
                   src={chain2}
                   alt=""
-                  className="absolute buttom-4 left-[32%] z-10 w-[100px]"
+                  className="absolute  bottom-[10px] left-[28%] z-10 w-[100px] float-animation-horizontal-delayed"
                 />
                 <div className="z-0">
-                  <Image
-                    src={circle}
-                    alt=""
-                    className="absolute bottom-1 right-[32%] z-0 w-[200px]"
-                  />
+                  {" "}
+                  <Circle classes=" absolute bottom-1 right-[32%] w-[200px]" />{" "}
                 </div>
               </div>
               <div
-                className=" bg-[#FCB64E] p-4  rounded-full w-[300px]  text-[24px] text-center mx-auto flex items-center gap-2 justify-center "
+                className="  bg-[#FCB64E] p-4  border-4 border-secondary hover:text-white hover:bg-[#202624]  rounded-full w-[300px]  my-11 text-[24px] text-center mx-auto flex items-center gap-2 justify-center  hover"
                 onClick={() => setshowModel(true)}
               >
-                <p>Join our Community</p> <Message classes="bg-black " />
+                <p>Join our Community</p> <Message className=" bounce   " />
               </div>
               <p className="text-center text-[#ffffffa8] text-[12px] mt-4 font-clash-semi">
                 {" "}
